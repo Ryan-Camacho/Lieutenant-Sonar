@@ -41,7 +41,6 @@ playD = button(20, 250, 300, 80)
 settingsD = button(20, 400, 598, 104)
 creditsD = button(20, 550, 418, 68)
 helpD = button(20, 700, 84, 82)
-
 while True:
     (mouseX, mouseY) = pygame.mouse.get_pos()
 
@@ -54,6 +53,7 @@ while True:
     win.blit(settingsImg, (20, 400))
     win.blit(creditsImg, (20, 550))
     win.blit(helpImg, (20, 700))
+
 
     # Play Button
     if ((mouseX < playD.x + playD.width) and (mouseX > playD.x)) and ((mouseY < playD.y + playD.height) and (mouseY > playD.y)):
